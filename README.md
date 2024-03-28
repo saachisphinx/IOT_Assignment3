@@ -1,4 +1,30 @@
 # IOT_Assignment3
+To make IoT System following  steps to be followed:
+Step 1: Make ThingSpeak Channel
+ThingSpeak is an IoT platform that allows you to collect, analyze, and act on data from IoT devices. To create a ThingSpeak channel:
+1.	Sign in to ThingSpeak or create a new account if you don't have one.
+2.	Navigate to the Channels section and click on "New Channel."
+3.	Fill in the required information such as name, description, and field labels.
+4.	Click "Save Channel" to create your ThingSpeak channel.
+Step 2: Add MQTT Device
+MQTT (Message Queuing Telemetry Transport) is a lightweight messaging protocol for small sensors and mobile devices. To add an MQTT device to your ThingSpeak channel:
+1.	In your ThingSpeak account, navigate to the "Apps" section and click on "ThingHTTP."
+2.	Create a new ThingHTTP by specifying a name and description.
+3.	Configure the ThingHTTP to send data to your ThingSpeak channel using the MQTT protocol. You'll need to specify the MQTT broker details and authentication credentials.
+4.	Save your ThingHTTP configuration.
+Step 3: Write Wokwi Code and Create Connection
+Wokwi is an online platform for simulating and testing Arduino code. To write Wokwi code and create a connection to ThingSpeak:
+1.	Write your Arduino code using the Wokwi Arduino simulator. This code should include MQTT client libraries to publish data to the ThingSpeak MQTT broker.
+2.	Configure the MQTT client in your code to connect to the ThingSpeak MQTT broker using the credentials provided in your ThingSpeak channel.
+3.	Test your code in the Wokwi Arduino simulator to ensure it works as expected.
+4.	Once you're satisfied with your code, you can upload it to your physical Arduino device.
+Step 4: Analyze the Data using MATLAB Analysis
+MATLAB offers powerful tools for analyzing and visualizing IoT data. To analyze the data received from your ThingSpeak channel:
+1.	Use MATLAB's ThingSpeak support package to connect to your ThingSpeak channel.
+2.	Retrieve the data from your channel using MATLAB commands.
+3.	Analyze the data using MATLAB's built-in functions and visualization tools. You can perform tasks such as data filtering, trend analysis, anomaly detection, etc.
+4.	Visualize the results using plots, graphs, and other visualization techniques provided by MATLAB.
+
 
 Code of wokwi
 import network
